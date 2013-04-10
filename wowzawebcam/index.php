@@ -8,21 +8,21 @@
 	<script src="js/swfobject.js"></script>
 	<script>
 		var flashvars = {
-		};
+			clientDomain:'<?php echo $_SERVER['SERVER_NAME'] ?>'
+		}
 		var params = {
 			menu: "false",
 			scale: "noScale",
 			allowFullscreen: "true",
 			allowScriptAccess: "always",
-			bgcolor: "",
-			wmode: "opaque"
-		};
+			wmode: "transparent"
+		}
 		var attributes = {
 			id:"wowza"
-		};
+		}
 		swfobject.embedSWF(
-			"webcam.swf", 
-			"altContent", "630", "410", "10.3.0", 
+			"Webcam.swf", 
+			"altContent", "665", "330", "9.0.0", 
 			"expressInstall.swf", 
 			flashvars, params, attributes);
 	</script>
