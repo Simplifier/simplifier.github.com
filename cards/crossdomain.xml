@@ -1,0 +1,8 @@
+<cross-domain-policy>
+<site-control permitted-cross-domain-policies="master-only"/>
+<allow-access-from domain="*.vk.com" to-ports="80"/>
+<allow-access-from domain="*.vk.me" to-ports="80"/>
+<allow-access-from domain="*.userapi.com" to-ports="80"/>
+<allow-access-from domain="*.vkontakte.ru" to-ports="80"/>
+<allow-access-from domain="*.mvkontakte.com" to-ports="80"/>
+</cross-domain-policy>
