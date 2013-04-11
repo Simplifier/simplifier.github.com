@@ -12,8 +12,8 @@
 			for (var i in array){
 				fvars[array[i].split('=')[0]]=array[i].split('=')[1];
 			}
-			var params = {allowFullScreen:"true", wmode:"window" };
-			swfobject.embedSWF("TestApp.swf", "myContent", "600", "400", "9.0.0", "expressInstall.swf", fvars, params);
+			var params = {allowFullScreen:"true", wmode:"opaque" };
+			swfobject.embedSWF("TestApp.swf", "myContent", "600", "400", "10.0.0", "expressInstall.swf", fvars, params);
 		</script>
 	</head>
 	<body style="background-image: url('bck_pattern.gif');" bgcolor="#333333">
