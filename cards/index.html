@@ -6,9 +6,19 @@
 		<script type="text/javascript" src="bin/swfobject.js"></script>
 		<script type="text/javascript">
 			var fvars = {};
-			var params = {allowFullScreen:"true", wmode:"window" };
-			swfobject.embedSWF("http://cs6197.vk.me/u125573310/5192152033057e.zip", "myContent", "806", "1200", "9.0.0", "bin/expressInstall.swf", fvars, params);
+			//вытаскиваем гет параметры из адреса
+			var array=document.location.toString().split('&');
+			array.shift();
+			for (var i in array){
+				fvars[array[i].split('=')[0]]=array[i].split('=')[1];
+			}
+			var params = {allowFullScreen:"true", wmode:"opaque" };
+			swfobject.embedSWF("http://cs6197.vk.me/u125573310/e8309d759e606a.zip", "myContent", "806", "850", "9.0.0", "bin/expressInstall.swf", fvars, params);
 		</script>
+		<style>
+			html, body { height:100%; overflow:hidden; }
+			body { margin:0; }
+		</style>
 	</head>
 	<body style="background-image: url('bck_pattern.gif');" bgcolor="#333333">
 		<div id="myContent" align="center">
