@@ -9,7 +9,7 @@
 			//вытаскиваем гет параметры из адреса
 			var array=document.location.toString().split('&');
 			array.shift();
-			console.log(array);
+			//console.log(array);
 			for (var i in array){
 				fvars[array[i].split('=')[0]]=array[i].split('=')[1];
 			}
