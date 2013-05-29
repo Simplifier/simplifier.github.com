@@ -4,6 +4,7 @@
 		<title>Cards</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="bin/swfobject.js"></script>
+		<script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
 		<script type="text/javascript">
 			var fvars = {};
 			//вытаскиваем гет параметры из адреса
@@ -14,7 +15,15 @@
 				fvars[array[i].split('=')[0]]=array[i].split('=')[1];
 			}
 			var params = {allowFullScreen:"true", wmode:"window" };
-			swfobject.embedSWF("http://app.vk.com/c6145/u125573310/6df70cee6301f7.swf", "myContent", "806", "850", "9.0.0", "bin/expressInstall.swf", fvars, params);
+			var attributes = { id:"cards" };
+			swfobject.embedSWF("http://app.vk.com/c6145/u125573310/d124071300aca6.swf", "myContent", "806", "850", "10.3.0", "bin/expressInstall.swf", fvars, params);
+			
+			function resizeWindow(newWidth,  newHeight) {
+				mySwf = document.getElementById("cards");
+				mySwf.width = newWidth;
+				mySwf.height = newHeight;
+				VK.callMethod('resizeWindow', newWidth,  newHeight );
+			}
 		</script>
 		<style>
 			html, body { height:100%; overflow:hidden; }
