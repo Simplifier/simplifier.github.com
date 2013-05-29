@@ -18,8 +18,14 @@
 			var attributes = { id:"cards" };
 			swfobject.embedSWF("http://app.vk.com/c6145/u125573310/d124071300aca6.swf", "myContent", "806", "850", "10.3.0", "bin/expressInstall.swf", fvars, params);
 			
-			function resizeWindow(newWidth,  newHeight) {
+			swfobject.addDomLoadEvent(function() {
 				mySwf = document.getElementById("cards");
+				VK.init(function() {
+					
+				});
+			});
+			
+			function resizeWindow(newWidth,  newHeight) {
 				mySwf.width = newWidth;
 				mySwf.height = newHeight;
 				VK.callMethod('resizeWindow', newWidth,  newHeight );
