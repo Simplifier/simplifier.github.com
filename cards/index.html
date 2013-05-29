@@ -17,7 +17,7 @@
 			var params = {allowFullScreen:"true", allowScriptAccess: "always", wmode:"window" };
 			var attributes = { id:"cards" };
 			swfobject.embedSWF("http://app.vk.com/c6145/u125573310/c0140aa6bcd71c.swf", "myContent", "806", "850", "10.3.0", "bin/expressInstall.swf", fvars, params);
-				alert(333+document.getElementById("cards"));
+				alert(333+'\n'+document.getElementById("cards"));
 			
 			swfobject.addDomLoadEvent(function() {
 				mySwf = document.getElementById("cards");
