@@ -14,7 +14,7 @@
 			for (var i in array){
 				fvars[array[i].split('=')[0]]=array[i].split('=')[1];
 			}
-			var params = {allowFullScreen:"true", wmode:"window" };
+			var params = {allowFullScreen:"true", allowScriptAccess: "always", wmode:"window" };
 			var attributes = { id:"cards" };
 			swfobject.embedSWF("http://app.vk.com/c6145/u125573310/d124071300aca6.swf", "myContent", "806", "850", "10.3.0", "bin/expressInstall.swf", fvars, params);
 			
