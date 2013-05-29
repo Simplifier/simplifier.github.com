@@ -22,6 +22,7 @@
 				mySwf = document.getElementById("cards");
 				//VK.addCallback('onWindowResized', onWindowResized);
 				window.onresize=onWindowResized;
+				window.parent.window.onresize=onWindowResized;
 				VK.init(function() {
 					VK.addCallback('onWindowResized', onWindowResized);
 				});
