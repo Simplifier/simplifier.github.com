@@ -21,6 +21,7 @@
 			swfobject.addDomLoadEvent(function() {
 				mySwf = document.getElementById("cards");
 				//VK.addCallback('onWindowResized', onWindowResized);
+				document.domain = "vk.com";
 				window.onresize=onWindowResized;
 				window.parent.window.onresize=onWindowResized;
 				VK.init(function() {
