@@ -20,10 +20,16 @@
 			
 			swfobject.addDomLoadEvent(function() {
 				mySwf = document.getElementById("cards");
+				VK.addCallback("onWindowResized", onWindowResized);
+				VK.addCallback("onLocationChanged", onLocationChanged);
 			});
 			
 			function onWindowResized(width,  height) {
 				console.log(width + ' ' + height);
+			}
+			
+			function onLocationChanged(loc) {
+				console.log(loc);
 			}
 			
 			function resizeWindow(newWidth,  newHeight) {
