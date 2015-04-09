@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Random word generator</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="srcData.js"></script>
+	<script src="script.js"></script>
+	<style>
+		.drop-plus {
+			font-weight: bold;
+		}
+		.btn-primary {
+			margin-right: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="buttons">
+			</div>
+
+			<div class="alert alert-info" role="alert">
+				<div class="btn-group">
+					<button type="button" class="btn btn-success">Сгенерировать n слов</button>
+					<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<span class="drop-plus">+</span>
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a class="drop-item" href="#">1</a></li>
+						<li><a class="drop-item" href="#">2</a></li>
+						<li><a class="drop-item" href="#">3</a></li>
+						<li><a class="drop-item" href="#">4</a></li>
+						<li><a class="drop-item" href="#">5</a></li>
+						<li><a class="drop-item" href="#">6</a></li>
+						<li><a class="drop-item" href="#">7</a></li>
+						<li><a class="drop-item" href="#">8</a></li>
+						<li><a class="drop-item" href="#">9</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
