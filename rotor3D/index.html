@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>three.js app</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper" style="display: block; margin: 0;">
+		<div id="Canvas"></div>
+	</div>
+	<div class="buttons" style="position: absolute; bottom: 0; right: 0">
+		<input type="button" model="mtr/Rotor_HiPoly.DAE" spec="mtr/images/Rotor_HiPoly_ReflectionMap.png" value="СВыс">
+		<input type="button" model="mtr/Rotor_HiPoly_Open.DAE" spec="mtr/images/Rotor_HiPoly_ReflectionMap.png" value="РВыс">
+		<input type="button" model="mtr/Rotor_Mid_Poly.DAE" spec="mtr/images/MidPoly_ReflectionMap.png" value="ССр">
+		<input type="button" model="mtr/Rotor_Mid_Poly_Open.DAE" spec="mtr/images/MidPoly_ReflectionMap.png" value="РСр">
+		<input type="button" model="mtr/Rotor_Low_Poly.DAE" spec="mtr/images/Rotor_LowPoly_ReflectionMap.png" value="СНиз">
+		<input type="button" model="mtr/Rotor_Low_Poly_Open.DAE" spec="mtr/images/Rotor_LowPoly_ReflectionMap.png" value="РНиз">
+	</div>
+
+	<script src="libs/jquery-1.10.1.js"></script>
+	<script src="libs/three.js"></script>
+	<script src="libs/Stats.js"></script>
+	<script src="libs/Detector.js"></script>
+	<script src="libs/OrbitControls.js"></script>
+	<script src="libs/TrackballControls.js"></script>
+	<script src="libs/THREEx.WindowResize.js"></script>
+	<script src="libs/ColladaLoader.js"></script>
+	<script src="libs/SceneLoader.js"></script>
+	<script src='libs/threex.domevents.js'></script>
+	<script src="src/ModelLoader.js"></script>
+	<script src="src/App.js"></script>
+</body>
+</html>
