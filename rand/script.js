@@ -24,6 +24,7 @@
 	}
 	
 	function createBtnGroup(words, save/*:Boolean*/) {
+		if (save) {
 			model.push(words);
 			saveData(model);
 		}
@@ -54,6 +55,7 @@
 		});
 		
 		//group close handler
+		btns.find('.close').click(function () {
 			var index = $(this).parent().index();
 			model.splice(index, 1);
 			saveData(model);
@@ -135,3 +137,4 @@
 			buttons.append(btns);
 		});
 	});
+})();
