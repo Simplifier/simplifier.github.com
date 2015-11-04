@@ -20,7 +20,7 @@
 	}
 	
 	function saveData(data) {
-		confectioner.set('words', JSON.stringify(data), {expires: 999999});
+		confectioner.set('words', JSON.stringify(data), {expires: 99999999});
 	}
 	
 	function createBtnGroup(words, save/*:Boolean*/) {
