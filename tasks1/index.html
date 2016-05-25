@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Задачи</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/p5.min.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/addons/p5.dom.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/addons/p5.sound.min.js" type="text/javascript"></script>
+
+    <script src="scripts.js" type="text/javascript"></script>
+
+    <style> 
+      body {padding: 0; margin: 0;} 
+      canvas {vertical-align: top;} 
+      .task {
+        margin: 20px 0 8px 0;
+      }
+      p {
+        font-family: Arial;
+        margin: 0;
+      }
+      h1 {
+        font-family: Arial;
+        font-size: 1.3rem;
+        line-height: 26px;
+        margin: 0 0 26px 0;
+        color: #616161;
+        word-spacing: 1px;
+      }
+      #content {
+        max-width: 800px;
+        margin: 20px;
+      }
+      .code {
+        font-family: monaco, "Courier New", Courier, monospace;
+        font-size: 11px;
+        line-height: normal;
+        color: #000000;
+    }
+    </style>
+  </head>
+  <body>
+  <div id="content">
+    <h1 class="large-header">Тренировочные задания</h1>
+    <div id="tasks">
+      <div class="task">
+        <p>1. Заполнить холст в случайном порядке двумя видами фигур: голубыми кругами и коричневыми квадратами. Фигуры расставлять по сетке, размер фигур тоже случайный (но не больше ячейки сетки)</p><br>
+        <p><span class="code">random(max) //генерирует случайное число от 0 до max</span></p>
+        <p><span class="code">random(min, max) //генерирует случайное число от min до max</span></p>
+      </div>
+      
+      <div class="task">
+        <p>2. Квадрат должен ездить вдоль границ экрана</p>
+      </div>
+      
+      <div class="task">
+        <p>3. Мячик летает с постоянной скоростью и отскакивает от границ экрана</p>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
