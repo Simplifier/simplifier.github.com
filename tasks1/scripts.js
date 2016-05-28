@@ -106,7 +106,7 @@ new p5(function(p) {
 });
 
 onload = function() {
-  var tasks = window['tasks'].getElementsByClassName('task');
+  var tasks = document.getElementsByClassName('task');
   var canvases = document.getElementsByTagName('canvas');
   
   var len = tasks.length;
