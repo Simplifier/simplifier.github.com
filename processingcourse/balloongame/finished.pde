@@ -35,6 +35,10 @@ void draw() {
 }
 
 void mousePressed() {
+  if(state != GAME) {
+    return;
+  }
+  
   for (int i = 0; i < numBalloons; i++) {
     if (distance(mouseX, mouseY, balloonX[i], balloonY[i]) < balloonSize[i] / 2) {
       resetBalloon(i);
