@@ -35,6 +35,9 @@
       .hljs {
         background: #f2f2f2;
       }
+      hr {
+        background: #CCC;
+      }
     </style>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
@@ -54,14 +57,20 @@
 
         <p>Вам даны устройства, которые непосредственно зависят от данного. Ваша задача для каждого устройства определить все устройства, которые выйдут из строя вместе с ним при его поломке.</p>
 
+        <hr>
+
         <p>Входные данные:</p>
 
         <pre><code class="java">int[][] dependents = {{2}, {2}, {}, {0}, {}, {}, {3, 5, 7}, {}};
 int[][] chainingDependents = new int[8][];</code></pre>
 
+        <hr>
+
         <p>Ожидаемый результат выполнения:</p>
 
         <pre><code class="java">масссив chainingDependents равный {{2}, {2}, {}, {0, 2}, {}, {}, {3, 0, 2, 5, 7}, {}}</code></pre>
+
+        <hr>
 
         <p>Для решения задачи в числе прочего необходимо будет реализовавать функции:</p>
 
