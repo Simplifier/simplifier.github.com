@@ -36,7 +36,9 @@
         background: #f2f2f2;
       }
       hr {
-        background: #CCC;
+        border-top-color: #ddd;
+        border-top-style: solid;
+        border-bottom-width: 0;
       }
     </style>
 
@@ -66,9 +68,9 @@ int[][] chainingDependents = new int[8][];</code></pre>
 
         <hr>
 
-        <p>Ожидаемый результат выполнения:</p>
+        <p>Ожидаемый результат выполнения: масссив chainingDependents равный</p>
 
-        <pre><code class="java">масссив chainingDependents равный {{2}, {2}, {}, {0, 2}, {}, {}, {3, 0, 2, 5, 7}, {}}</code></pre>
+        <pre><code class="java">{{2}, {2}, {}, {0, 2}, {}, {}, {3, 0, 2, 5, 7}, {}}</code></pre>
 
         <hr>
 
