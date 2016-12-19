@@ -74,6 +74,26 @@ int[][] chainingDependents = new int[8][];</code></pre>
 
         <hr>
 
+        <p>Короткого способа вывести двумерный массив в консоль нет, поэтому содержимое придется выводить с помощью цикла похожим кодом:</p>
+
+        <pre><code class="java">int[][] matrix = {
+  {5, 7, 6}, 
+  {31, 4, 7}, 
+  {52, 51, 7}
+};
+
+print('{');
+for (int[] nums : matrix) {
+  print('{');
+  for (int num : nums) {
+    print(num + ", ");
+  }
+  print("}, ");
+}
+print('}');</code></pre>
+
+        <hr>
+
         <p>Для решения задачи в числе прочего необходимо будет реализовавать функции:</p>
 
         <pre><code class="java">boolean doesArrayContainElement(int[] array, int element) // определяет, входит ли element в array
