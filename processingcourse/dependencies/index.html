@@ -68,7 +68,10 @@
 
         <p>Входные данные:</p>
 
-        <pre><code class="java">int[][] dependents = {{2}, {2}, {}, {0}, {}, {}, {3, 5, 7}, {}};
+        <pre><code class="java">// массив с исходными данными
+int[][] dependents = {{2}, {2}, {}, {0}, {}, {}, {3, 5, 7}, {}};
+
+// массив, который надо заполнить
 int[][] chainingDependents = new int[8][];</code></pre>
 
         <hr>
@@ -82,6 +85,7 @@ int[][] chainingDependents = new int[8][];</code></pre>
         <p>Для решения задачи, в числе прочего, необходимо будет реализовавать функции:</p>
 
         <pre><code class="java">boolean doesArrayContainElement(int[] array, int element) // определяет, входит ли element в array
+        
 int[] findDependents(int gadget, int[] array) // рекурсивно ищет все зависимые от gadget устройства, сохраняя их в массив array. когда найдет все, возращает этот массив</code></pre>
 
         <hr>
