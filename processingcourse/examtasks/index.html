@@ -57,7 +57,7 @@
     <h1 class="large-header">Экзаменационные задания</h1>
     <div class="tasks">
       <div class="task">
-        <p>1. Сделать эффект шлейфа: при движении круга за ним остаются круги поменьше. Хранить их координаты можно в массиве фиксированной длины (длина "хвоста")</p>
+        <p>1. Сделать эффект шлейфа: при движении круга за ним остаются несколько кругов в предыдущих положениях курсора (размер и цвет менять необязательно). Хранить их координаты можно в массиве фиксированной длины (длина "хвоста")</p>
 
       </div>
       <canvas data-processing-sources="trail.pde"></canvas>
@@ -68,6 +68,7 @@
         <p>При этом необходимо написать такие функции:</p>
 
         <pre><code class="java">boolean isPointInRect(float pointX, float pointY, float rectX, float rectY, int rectWidth, int rectHeight) // возвращает true, если точка point находится внутри прямоугольника rect
+        
 float getIntersectionArea(float rectAX, float rectAY, int rectAWidth, int rectAHeight, float rectBX, float rectBY, int rectBWidth, int rectBHeight) // возвращает площадь пересечения прямоугольников rectA и rectB</code></pre>
       </div>
 
