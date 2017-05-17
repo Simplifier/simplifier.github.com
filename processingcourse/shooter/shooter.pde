@@ -13,7 +13,7 @@ int aimY;
 int score = 0;
 
 void setup() {
-  size(800, 800, OPENGL);
+  size(800, 800, P3D);
   hero = loadImage("pix/engineer.png");
   ground = loadImage("pix/ground.png");
   bullet = loadImage("pix/big shot.png");
@@ -30,7 +30,7 @@ void draw() {
   image(ground, 0, 0);
   ellipse(aimX, aimY, 50, 50);
   
-  pushMatrix();
+  //pushMatrix();
   //translate(50, height / 2 - 42);
   //rotate(radians(angle));
 
@@ -65,7 +65,7 @@ void draw() {
     }
   }
   
-  popMatrix();
+  //popMatrix();
   text(score, 10, 5);
 }
 
