@@ -31,7 +31,7 @@ new p5(function(p) {
     p.image(ground, 0, 0);
     p.ellipse(aimX, aimY, 50, 50);
     
-    p.pushMatrix();
+    p.push();
     p.translate(50, p.height / 2 - 42);
     p.rotate(p.radians(angle));
 
@@ -66,7 +66,7 @@ new p5(function(p) {
       }
     }
     
-    p.popMatrix();
+    p.pop();
     p.text(score, 10, 5);
   }
 
