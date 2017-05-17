@@ -39,8 +39,8 @@ new p5(function(p) {
       p.image(bullet, -7, -110 + bulletPos, 61, 100);
       bulletPos -= 15;
 
-      float x = p.modelX(24, -79 + bulletPos, 0);
-      float y = p.modelY(24, -79 + bulletPos, 0);
+      var x = p.modelX(24, -79 + bulletPos, 0);
+      var y = p.modelY(24, -79 + bulletPos, 0);
 
       if (p.dist(x, y, aimX, aimY) < 25) {
         isShooting = false;
