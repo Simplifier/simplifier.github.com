@@ -19,8 +19,8 @@ new p5(function(p) {
     ground = p.loadImage("pix/ground.png");
     bullet = p.loadImage("pix/big shot.png");
 
-    aimX = p.random(150, width);
-    aimY = p.random(height);
+    aimX = p.random(150, p.width);
+    aimY = p.random(p.height);
     p.noStroke();
     p.fill('#CEA75E');
     p.textSize(36);
