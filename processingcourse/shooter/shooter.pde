@@ -13,7 +13,7 @@ int aimY;
 int score = 0;
 
 void setup() {
-  size(800, 800, P3D);
+  size(800, 800);
   hero = loadImage("pix/engineer.png");
   ground = loadImage("pix/ground.png");
   bullet = loadImage("pix/big shot.png");
@@ -31,8 +31,8 @@ void draw() {
   ellipse(aimX, aimY, 50, 50);
   
   pushMatrix();
-  translate(50, height / 2 - 42, 0);
-  rotateZ(radians(angle));
+  translate(50, height / 2 - 42);
+  rotate(radians(angle));
 
   if (isShooting) {
     image(bullet, -7, -110 + bulletPos, 61, 100);
