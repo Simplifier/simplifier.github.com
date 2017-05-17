@@ -31,8 +31,8 @@ void draw() {
   ellipse(aimX, aimY, 50, 50);
   
   pushMatrix();
-  translate(50, height / 2 - 42);
-  rotate(radians(angle));
+  translate(50, height / 2 - 42, 0);
+  rotateZ(radians(angle));
 
   if (isShooting) {
     image(bullet, -7, -110 + bulletPos, 61, 100);
