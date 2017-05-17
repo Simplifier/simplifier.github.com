@@ -24,7 +24,7 @@ new p5(function(p) {
     p.noStroke();
     p.fill('#CEA75E');
     p.textSize(36);
-    p.textAlign(LEFT, TOP);
+    p.textAlign(p.LEFT, p.TOP);
   }
 
   p.draw = function () {
@@ -32,7 +32,7 @@ new p5(function(p) {
     p.ellipse(aimX, aimY, 50, 50);
     
     p.pushMatrix();
-    p.translate(50, height / 2 - 42);
+    p.translate(50, p.height / 2 - 42);
     p.rotate(p.radians(angle));
 
     if (isShooting) {
@@ -61,7 +61,7 @@ new p5(function(p) {
     if (p.keyPressed) {
       if (p.keyCode == p.LEFT) {
         angle--;
-      } else if (keyCode == p.RIGHT) {
+      } else if (p.keyCode == p.RIGHT) {
         angle++;
       }
     }
@@ -70,8 +70,8 @@ new p5(function(p) {
     p.text(score, 10, 5);
   }
 
-  p.draw = function () {
-    if (key == ' ') {
+  p.keyReleased = function () {
+    if (p.key == ' ') {
       isShooting = true;
       bulletPos = 0;
     }
