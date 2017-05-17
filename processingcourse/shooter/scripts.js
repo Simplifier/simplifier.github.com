@@ -1,29 +1,4 @@
 new p5(function(p) {
-  p.setup = function () {
-    p.createCanvas(480, 200);
-    p.noStroke(); 
-    p.rectMode(p.CENTER);
-
-    var cell = 8;
-
-    p.background(0);
-
-    for (var x = 0; x < p.width; x += cell) {
-      for (var y = 0; y < p.height; y += cell) {
-        var r = p.random(cell);
-        if (p.random(1) < 0.5) {
-          p.fill(0, 155, 255);
-          p.ellipse(x + cell/2, y + cell/2, r, r);
-        } else {
-          p.fill(155, 25, 0);
-          p.rect(x + cell/2, y + cell/2, r, r);
-        }
-      }
-    }
-  }
-});
-
-new p5(function(p) {
   var hero;
   var ground;
   var bullet;
@@ -39,59 +14,60 @@ new p5(function(p) {
   var score = 0;
 
   p.setup = function () {
-    hero = loadImage("pix/engineer.png");
-    ground = loadImage("pix/ground.png");
-    bullet = loadImage("pix/big shot.png");
+    p.createCanvas(800, 800, p.WEBGL);
+    hero = p.loadImage("pix/engineer.png");
+    ground = p.loadImage("pix/ground.png");
+    bullet = p.loadImage("pix/big shot.png");
 
-    aimX = random(150, width);
-    aimY = random(height);
-    noStroke();
-    fill(#CEA75E);
-    textSize(36);
-    textAlign(LEFT, TOP);
+    aimX = p.random(150, width);
+    aimY = p.random(height);
+    p.noStroke();
+    p.fill('#CEA75E');
+    p.textSize(36);
+    p.textAlign(LEFT, TOP);
   }
 
   p.draw = function () {
-    image(ground, 0, 0);
-    ellipse(aimX, aimY, 50, 50);
+    p.image(ground, 0, 0);
+    p.ellipse(aimX, aimY, 50, 50);
     
-    pushMatrix();
-    translate(50, height / 2 - 42);
-    rotate(radians(angle));
+    p.pushMatrix();
+    p.translate(50, height / 2 - 42);
+    p.rotate(p.radians(angle));
 
     if (isShooting) {
-      image(bullet, -7, -110 + bulletPos, 61, 100);
+      p.image(bullet, -7, -110 + bulletPos, 61, 100);
       bulletPos -= 15;
 
-      float x = modelX(24, -79 + bulletPos, 0);
-      float y = modelY(24, -79 + bulletPos, 0);
+      float x = p.modelX(24, -79 + bulletPos, 0);
+      float y = p.modelY(24, -79 + bulletPos, 0);
 
-      if (dist(x, y, aimX, aimY) < 25) {
+      if (p.dist(x, y, aimX, aimY) < 25) {
         isShooting = false;
-        aimX = random(150, width);
-        aimY = random(height);
+        aimX = p.random(150, p.width);
+        aimY = p.random(p.height);
         score += 10;
       }
       
-      if(x < 0 || x > width || y < 0 || y > height) {
+      if(x < 0 || x > p.width || y < 0 || y > p.height) {
         isShooting = false;
         score -= 5;
       }
     }
 
-    image(hero, -41, -70, 82, 95);
-    ellipse(24, -79, 4, 4);
+    p.image(hero, -41, -70, 82, 95);
+    p.ellipse(24, -79, 4, 4);
 
-    if (keyPressed) {
-      if (keyCode == LEFT) {
+    if (p.keyPressed) {
+      if (p.keyCode == p.LEFT) {
         angle--;
-      } else if (keyCode == RIGHT) {
+      } else if (keyCode == p.RIGHT) {
         angle++;
       }
     }
     
-    popMatrix();
-    text(score, 10, 5);
+    p.popMatrix();
+    p.text(score, 10, 5);
   }
 
   p.draw = function () {
