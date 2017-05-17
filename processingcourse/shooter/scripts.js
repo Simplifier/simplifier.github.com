@@ -14,7 +14,7 @@ new p5(function(p) {
   var score = 0;
 
   p.setup = function () {
-    p.createCanvas(800, 800, p.WEBGL);
+    p.createCanvas(800, 800);
     hero = p.loadImage("pix/engineer.png");
     ground = p.loadImage("pix/ground.png");
     bullet = p.loadImage("pix/big shot.png");
