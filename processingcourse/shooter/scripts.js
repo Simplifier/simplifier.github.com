@@ -58,7 +58,7 @@ new p5(function(p) {
     p.image(hero, -41, -70, 82, 95);
     p.ellipse(24, -79, 4, 4);
 
-    if (p.keyPressed) {
+    if (p.keyIsPressed) {
       if (p.keyCode == p.LEFT) {
         angle--;
       } else if (p.keyCode == p.RIGHT) {
