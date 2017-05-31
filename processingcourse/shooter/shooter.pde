@@ -13,7 +13,8 @@ int aimY;
 int score = 0;
 
 void setup() {
-  size(800, 800);
+  size(800, 800, P3D);
+  camera();
   hero = loadImage("pix/engineer.png");
   ground = loadImage("pix/ground.png");
   bullet = loadImage("pix/big shot.png");
