@@ -13,7 +13,7 @@ int aimY;
 int score = 0;
 
 void setup() {
-  size(800, 800);
+  size(800, 800, P3D);
   hero = loadImage("pix/engineer.png");
   ground = loadImage("pix/ground.png");
   bullet = loadImage("pix/big shot.png");
@@ -38,17 +38,17 @@ void draw() {
     image(bullet, -7, -110 + bulletPos, 61, 100);
     bulletPos -= 15;
 
-    PVector v = getPosition(24, -79 + bulletPos);
+    float x = modelX(24, -79 + bulletPos, 0);
+    float y = modelY(24, -79 + bulletPos, 0);
 
-    // check hit
-    if (dist(v.x, v.y, aimX, aimY) < 25) {
+    if (dist(x, y, aimX, aimY) < 25) {
       isShooting = false;
       aimX = (int)random(150, width);
       aimY = (int)random(height);
       score += 10;
     }
     
-    if(v.x < 0 || v.x > width || v.y < 0 || v.y > height) {
+    if(x < 0 || x > width || y < 0 || y > height) {
       isShooting = false;
       score -= 5;
     }
@@ -74,12 +74,4 @@ void keyReleased() {
     isShooting = true;
     bulletPos = 0;
   }
-}
-
-PVector getPosition(int x, int y) {
-  pushMatrix();
-  translate(x, y);
-  PMatrix2D m = (PMatrix2D)getMatrix();
-  popMatrix();
-  return new PVector(m.m02, m.m12);
 }
