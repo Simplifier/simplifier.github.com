@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Семинар 6. Базовая подготовка.</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/if_note_1296370.ico">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myInverseNavbar2" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">Базовая подготовка. Часть 2.</a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myInverseNavbar2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" title="Link">Семинар 1</a></li>
+        <li><a href="lesson2.html" title="Link">Семинар 2</a></li>
+        <li><a href="lesson3.html" title="Link">Семинар 3</a></li>
+        <li><a href="lesson4.html" title="Link">Семинар 4</a></li>
+        <li><a href="lesson5.html" title="Link">Семинар 5</a></li>
+        <li><a href="lesson6.html" title="Link">Семинар 6</a></li>
+        <li><a href="lesson7.html" title="Link">Семинар 7</a></li>
+        <li><a href="lesson8.html" title="Link">Семинар 8</a></li>
+        <li><a href="lesson9.html" title="Link">Семинар 9</a></li>
+        <li><a href="lesson10.html" title="Link">Семинар 10</a></li>
+        <li><a href="lesson11.html" title="Link">Семинар 11</a></li>
+        <li><a href="lesson12.html" title="Link">Семинар 12</a></li>
+        <li><a href="lesson13.html" title="Link">Семинар 13</a></li>
+        <li><a href="lesson14.html" title="Link">Семинар 14</a></li>
+        <li><a href="lesson15.html" title="Link">Семинар 15</a></li>
+        <li><a href="lesson16.html" title="Link">Семинар 16</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+  <div class="container">
+    <div class="row">
+      <h2>Семинар 6. Среда программирования Scratch</h2>
+      <!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-xs">
+        <div id="carousel-299058" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-299058" data-slide-to="0" class=""> </li>
+            <li data-target="#carousel-299058" data-slide-to="1" class="active"> </li>
+            <li data-target="#carousel-299058" data-slide-to="2" class=""> </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item"> <img class="img-responsive" src="images/pic110.jpg" alt="thumb">
+              <div class="carousel-caption"> Тестирование </div>
+            </div>
+            <div class="item active"> <img class="img-responsive" src="images/pic111.jpg" alt="thumb">
+              <div class="carousel-caption"> Цветнсость </div>
+            </div>
+            <div class="item"> <img class="img-responsive" src="images/pic112.jpg" alt="thumb">
+              <div class="carousel-caption"> Новые персонажи </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-299058" data-slide="prev"><span class="icon-prev"></span></a> <a class="right carousel-control" href="#carousel-299058" data-slide="next"><span class="icon-next"></span></a></div>
+      </div>-->
+    </div>
+  </div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+	  <div class="row">
+        <div class="col-lg-12">
+          <h4><a name="m0">Знакомство с координатами</a></h4>
+          <p>Координаты очень важная и полезная вещь. Например, они используются в GPS навигации при задании маршрута движения машины : чтобы навигатор мог точно определить путь следования машины и подсказать водителю, куда ему ехать. Навигация невозможна без координат. Чтобы самолёт мог точно сесть на посадочную полосу в автоматическом режиме, чтобы инженер мог точно рассчитать размеры здания, толщину труб, чтобы Джек Воробей мог найти сокровища и многое многое другое, нужны координаты. Так что же это за таинственные и важные незнакомки, эти координаты? </p>
+          <p>Координаты в Scratch - это адрес точки на сцене. Это как твой домашний адрес, только вместо номера дома и квартиры используются буквы X и Y</p>
+          <p>Координата X - направление по горизонту, а координата Y - направление по вертикали. Сначала записывается значение по горизонтали, потом - по вертикали.</p>
+          <img src="images/pic10.png" alt="" class="img-responsive">
+          <p>Если подвигать мышкой по экрану, в правом нижнем углу сцены ты увидешь значения X и Y. </p>
+          <img src="images/pic138.jpg" alt="" class="img-responsive">
+          <p>Центр сцены - это точка с координатами (X:0,Y:0)</p>
+          <p>Общая ширина сцены в Scratch составляет 480 точек, т.е. справа от X:0 до X:240, слева от X:0 до X:-240. Общая высота - 360 точек, т.е. вверх от Y:0 до Y:180 и вниз от Y:0 до Y:-180</p>
+   	    </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><a name="m1"> Движение по оси X </a></h4>
+          <p>1. Добавь в проект Гигу  </p>
+          <img src="images/pic139.jpg" alt="" class="img-responsive">
+          <p>2. Напиши для неё следующую программу </p>
+          <img src="images/pic140.jpg" alt="" class="img-responsive">
+          <p>Вот так перемещается персонаж по оси Х. </p>
+          <img src="images/pic117.jpg" alt="" class="img-responsive">
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><a name="m2"> Практика 1 </a></h4>
+          <p>Аналогично движению по оси Х, сделай движение по оси Y</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><a name="m3"> Практика 2 </a></h4>
+          <p>Создай  новый  проект.  Это  будет маленький  мультик  про  Кота,  который гулял по пустыне, повстречался с Летучей мышью,  и  улетел  от  неё  на  реактивном ранце.  Летучая  мышь  заплачет  горькими слезами. </p>
+          <p>1. Вначале добавь фон  из библиотеки. </p>
+          <img src="images/pic (2).jpg" alt="" class="img-responsive">
+          <p>2. Выбери пустыню (desert). </p>
+          <img src="images/pic (4).jpg" alt="" class="img-responsive">
+          <p>3. Добавь персонаж – летучую мышь  </p>
+          <img src="images/pic (5).jpg" alt="" width="350" class="img-responsive"> 
+          <p>4.  Теперь  добавь  своим персонажам  по  несколько костюмов. Сначала Коту. Нажми на Кота, а потом на вкладку «костюмы». </p>
+          <img src="images/pic (6).jpg" alt="" class="img-responsive">
+          <img src="images/pic (7).jpg" alt="" class="img-responsive">
+          <p>5. У Кота уже есть Костюм2, но он  тебе  не  нужен,  удали  его кружочком с крестиком. </p>
+          <img src="images/pic (8).jpg" alt="" class="img-responsive">
+          <p>6. Нажми правой кнопкой  мыши на костюм 1, далее дублировать. </p>
+          <img src="images/pic (9).jpg" alt="" class="img-responsive">
+          <p>7. Появится Костюм2 – копия Костюма1. </p>         
+          <p>8.  Подрисуй  Коту  на  Костюме2 реактивный  ранец,  с  помощью различных инструментов графического редактора. Чтобы  подрисовать  реактивный  ранец, нажми прямоугольник.  </p>
+          <img src="images/pic (11).jpg" alt="" width="350" class="img-responsive">
+          <p> Выбери пипеткой серый цвет. </p>
+          <img src="images/pic (12).jpg" alt="" width="350" class="img-responsive">
+          <p> Подрисуй Коту на спине два прямоугольника </p>
+          <img src="images/pic (13).jpg" alt="" width="200" class="img-responsive">
+          <p>9. Дублируя Костюм 2, создай  Костюм 3. Добавь огня к ракете, чтобы получилось что-то похожее. </p>
+          <img src="images/pic (14).jpg" alt="" width="200" class="img-responsive">
+          <p>10. Летучей мыши тоже добавь ещё один костюм и подрисуй слёзы.  </p>
+          <img src="images/pic (1).jpg" alt="" width="300" class="img-responsive">
+          <p>11. Напиши программу для кота и летучей мыши.  </p>
+          <img src="images/pic141.jpg" alt="" class="img-responsive">
+          <img src="images/pic142.jpg" alt="" class="img-responsive">
+          <p>12. Запускайте программу. Если все сделано правильно, Кот подойдет к летучей мыши, скажет: «Hello!». Мышь скажет: «I kill you!». Кот оденет  реактивный ранец, улетит вверх и исчезнет. Мышь заплачет: «My dinner…». </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4><a name="m4">Практика 3</a></h4>
+          <p>Жил да был в Чернобыле котёнок Тесей. Жил он в семье сталкеров. Как-то  раз  пошёл  котёнок  Тесей  полазить  по  новому  подвалу  в  секторе  №13, поискать,  чем  можно  поживиться.  Стены  подвала  были  радиоактивными, поэтому дотрагиваться до них было нельзя. Вдруг навстречу ему тушканчик с головой Быка!</p>
+          <p>Тесей был очень начитанным котёнком  и сразу понял кто это. Каждый вечер перед сном он читал надпись на плакате, который висел над его корзинкой из-под противогазов. Никаких других слов в его доме не было, зато это слово он  прочитал  более  тысячи  раз,  и  очень  гордился  этим.  Он  был  самым начитанным в семье сталкеров. Папа сталкер прочитал это слово всего десять раз,  а  мама  сталкер  прочитала  его  всего  один  раз,  запомнила  и  больше  не читала. </p>
+          <p>На  плакате  был  нарисован  человек  с  головой  быка,  и  написано  слово «Минотавр». В подвале котёнок Тесей сразу понял, что перед ним именно он!  Это был тушканчик-мутант с головой быка, очень похожий физиономией лица  на  Минотавра  с  плаката.  Котёнок  Тесей  встал  в  стойку  Камаэ  (развернул туловище  вправо,  плечи  спустил  естественным  образом,  колени  согнул  без чрезмерности, сжал кулаки и расположил их на уровне чу-дан). Минотавр всё понял, это был не первый каратист на его жизненном пути. С криком: «Эй, Тесей! Меня не бей!» - он исчез, и больше его на белом свете никто не видел. Возможно, его найдут где-нибудь на орбите Земли. </p>
+          <p>Игра будет выглядеть так. Лабиринт с Минотавром в центре. В углу маленький, но  очень  смелый  Котёнок  Тесей,  которому  необходимо  пройти  лабиринт  и дотронуться  до  Минотавра.  Тесей  не  должен  касаться  стенок  лабиринта,  они реактивные! Если Котёнок коснётся стены, он скажет «Ой!», и исчезнет. Если же тебе удастся пройти весь лабиринт и дотронуться до Минотавра, то он исчезнет с криком «Эй, Тесей! Меня не бей!». </p>
+          <img src="images/pic143.jpg" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4><a name="m5">Языки программирования</a></h4>
+          <p>В  современном  мире  программирование  способно  решать  множество простых и сложных задач, от покраски забора до управления марсоходом. И для выполнения  той  или  иной  задачи,  используется  наиболее  подходящий  язык программирования. На данный момент существует огромное количество языков на  любой,  как  говорится,  вкус  и  цвет.  Есть  очень  простые  и  просто мозгодробительные  языки,  есть  серьезные  и  шуточные  языки.  Много  их,  в общем, есть. И каждый из них создавался с определенной целью. </p>
+          <h4>Интерпретируемые  и  компилируемые  языки программирования.  </h4>
+          <p> Смысл  любой  программы  –  проведение  некоторых  манипуляций  с данными.  Эти  манипуляции  задействуют  сердце  любого  компьютера  – процессор.  Процессор,  в  свою  очередь,  понимает  только  узкий  набор специальных команд (машинные инструкции), а отнюдь не те блоки, которые ты перемещал  по  экрану  и  код  (текст),  который  получается  при  составлении блоков. </p>
+          <p>Ты ведь помнишь как посмотреть код того или иного блока? </p>
+          <p>Для  этого  необходимо  нажать  на  кнопку «Показать код»</p>
+          <img src="images/pic144.jpg" alt="" class="img-responsive">
+          <p>Программа, превращающая исходный код (текст), написанный на языке программирования, в машинные инструкции называется компилятором. </p>
+          <p>По мере преобразования текста программы в машинный код, компилятор может  обнаруживать  ошибки  (синтаксиса  языка,  например).  Поэтому  все проблемы  забытых  точек  с  запятыми,  забытых  скобок  решаются  на  этапе компиляции.  </p>
+          <p>Также  следует  сказать,  что  скомпилированная  программа  будет платформо-зависимой, например, будет понятна компьютеру с операционной системой семейства Windows и не сможет быть выполнен в рамках других, таких как Linux (может быть и наоборот). </p>
+          <p>Примеры компилируемых языков: Assembler, C, C++, Pascal, Delphi.</p>
+          <p>Программируя же на интерпетируемом языке, мы пишем программу не для  выполнения  на  процессоре,  а  для  выполнения  программой-интерпретатором. Ее также называют виртуальной машиной. </p>
+          <p>Как правило, программа преобразуется в некоторый промежуточный код, то  есть  набор  инструкций,  понятный  виртуальной  машине.  Например,  код программы,  написанный  на  C#  превращается  в  IL  (Intermediate  Language), который может выполнять платформа .Net Framework.</p>
+          <p>Идея .NET Framework (читается как «дот нэт фреймворк», где dot – точка, net – сеть framework – каркас).  состоит в том, что у конечного пользователя при ее  запуске  создается  что-то  вроде  «виртуального  компьютера»,  на  котором выполняются программы, написанные специально для .NET. Этот виртуальный компьютер совершенно не зависит от типа вашего компьютера, операционной системы  или  архитектуры    микропроцессора    –  он    одинаков    везде,    где  существует    .NET.    Таким    способом  обеспечивается    «переносимость»  программ    между    различными    операционными    системами.  В  настоящий момент приложения .Net можно запускать в Windows, Linux и Android (проект Mono), Mac OS / Tiger (проект Portable.NET). </p>
+        </div>
+      </div>     
+      <div clss="row"> 
+        <div class="col-md-12">
+          <h4><a name="m6">Высокоуровневые  и  низкоуровневые  языки программирования</a></h4>
+          <p>Все языки программирования делят на языки низкого и высокого уровня. Если язык близок к естественному языку программирования, то он называется языком высокого уровня, если ближе к машинным командам, – языком низкого уровня. </p>
+          <table width="400" border="1">
+			  <tbody>
+				<tr>
+				  <td><strong>Высокоуровневые</strong> </td>
+				  <td><strong>Низкоуровневые</strong> </td>
+				</tr>
+				<tr>
+				  <td>C++, C#, Java, JavaScript,  Python, PHP, Ruby,  Perl, Паскаль, Delphi, Lisp </td>
+				  <td>Язык ассемблера</td>
+				</tr>
+			  </tbody>
+		  </table>
+		  <h5> <strong>Рейтинг использования языков программирования</strong></h5>
+          <img src="images/pic145.jpg" alt="" class="img-responsive">
+          <p>Выбор языка программирования во время создания программы является очень важным моментом, от которого зависит очень и очень многое – скорость создания программы, скорость тестирования, возможность  быстрого внесения изменений, быстрота выполнения конечного продукта и так далее. При этом стоит помнить, что идеального языка не существует, все они обладают своими положительными и отрицательными качествами, которые будут, так или иначе, влиять на процесс разработки. </p>
+          <p>Вообще языки программирования можно сравнить с машинами. </p> 
+          <p><strong>Assembler</strong> – вы и есть машина. </p>
+          <p><strong>Basic</strong> – это простенькая машина для коротких поездок в ближайший магазинчик. Пользовался  популярностью  среди  начинающих  водителей,  но  потом  был полностью  переделан  производителем  для  длительных  путешествий  и оригинал напоминает лишь отдалённо. </p>
+          <p><strong>С  (си)</strong>  –  это  спортивная  машина,  которая  ездит  очень  быстро,  но  при  этом ломается каждые пятьдесят километров.</p>
+          <p><strong>С++</strong> - это проапгрейденый новым функционалом гоночный автомобиль, теперь он ломается только каждые 250 километров, но при этом понять, что сломалось, становится практически невозможным</p>
+          <p><strong>С#</strong> - это любимый семейный универсал, однажды его поводив, вы уже никогда не воспользуетесь автомобилями других производителей. </p>
+          <p><strong>Java</strong> – такая же модель, как и предыдущая, только другого цвета. </p>
+          <p><strong>Lisp</strong> – выглядит как машина, но при желании может быть переделана в субмарину или самолёт. </p>
+          <p><strong>Python</strong>  –  отличная  машина  для  начинающих,  чтобы  водить  её  даже  не  надо обладать  водительскими  правами.  Если  вы  не  хотите  ездить  действительно быстро или в каких-то сложных условиях, то другая машина вам не понадобится. </p>
+          <p><strong>PHP</strong> – это Винермобиль Оскара Майера. Выглядит жутко и управляется с трудом, но почти каждый всё равно ещё хочет его водить. </p>
+        </div>
+      </div>
+      <div clss="row">         	
+        <div class="col-md-12">
+          <h4><a name="n0"> Домашнее задание </a></h4>         
+          <p>Создай мультик с привидениями.</p>
+          <p>Жила-была Девушка. Как-то раз она гуляла, и вдруг, откуда ни возьмись, подлетают к ней два Привидения и пугают её. </p>
+          <img src="images/pic146.jpg" alt="" class="img-responsive">
+          <p>«Спасите, помогите!»</p>
+          <img src="images/pic147.jpg" alt="" class="img-responsive">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="well">
+       <nav>
+         <ul>
+           <li><a href="#m0" title="Link">Знакомство с координатами</a></li>
+           <li><a href="#m1" title="Link">Движение по оси X</a></li>
+           <li><a href="#m2" title="Link">Практика 1</a></li>
+           <li><a href="#m3" title="Link">Практика 2</a></li>
+           <li><a href="#m4" title="Link">Практика 3</a></li>
+           <li><a href="#m5" title="Link">Языки программирования</a></li>
+           <li><a href="#m6" title="Link">Высокоуровневые и низкоуровневые языки программирования</a></li>
+           <li><a href="#n0" title="Link">Домашнее задание</a></li>
+          </ul>
+        </nav>
+        <a href="#top" onclick="ScrollUp();return!1;" style="display:block;position:fixed;/*положение кнопки*/ bottom:30px;right:30px; font-size:16px; opacity:0.7; /*добавим прозрачности*/ -webkit-border-radius:15px; -moz-border-radius:15px; ">Наверх</a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container well">
+  <div class="row">
+<div class="col-xs-6"> <span class="text-right">
+      </span>
+  <h3>Юниум</h3>
+	<p>Камынин А.И. Учебное пособие по курсу "Базовая подготовка" 2017 &copy; </p>
+</div>
+<div class="col-xs-6"> <span class="text-right"> </span>
+  <h3>Контакты</h3>
+    <address>
+      <strong>Образовательные курсы <a href="https://unium.ru/" title="официальный сайт">Юниум</a> </strong><br>
+      <a href="tel:+78005557117" class="phone">+7 800 555-71-17</a>
+    </address>
+
+    <address>
+      <strong>Алексей Камынин</strong><br>
+      <a href="mailto:#">alex.kam@bk.ru</a>
+    </address>
+</div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script>
+	function ScrollUp(){
+		var t,s;
+		s=document.body.scrollTop||window.pageYOffset;
+		t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
+</script>
+</body>
+</html>
