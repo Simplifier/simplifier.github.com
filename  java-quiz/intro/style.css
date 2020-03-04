@@ -1,0 +1,560 @@
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body, #app, div[data-reactroot] {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    background: rgb(249, 219, 61);
+    color: #444;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 2.25em;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.1em;
+    margin: 0 0 15px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+span {
+    pointer-events: none;
+}
+
+code {
+    font-weight: normal !important;
+    pointer-events: none;
+}
+
+pre[class*="language-"] {
+    margin: 0 0 .5em;
+    font-size: .9em;
+    padding: 0.5em;
+}
+
+.token.operator {
+     background: none;
+ }
+
+.question-answer pre {
+    background: #f8e588;
+}
+
+.score-container, .question-count {
+    width: 250px;
+    text-align: center;
+}
+
+.score-container h2, .question-count h2 {
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.score, .question-number {
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.description {
+    font-size: 1.5em;
+}
+
+.questions {
+    width: 85%;
+    margin: auto;
+}
+
+.question-list {
+    margin: 0;
+}
+
+.question {
+    font-size: 1.5em;
+}
+
+.question-answers {
+    margin-top: .75em;
+    padding-left: 1.2em;
+}
+
+.multi-answers {
+    margin-top: .75em;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.question-answer {
+    list-style-type: lower-alpha;
+    cursor: pointer;
+    padding: .3em;
+    margin-bottom: .3em;
+    border: .25em solid transparent;
+}
+
+.question-answer span {
+    line-height: 1.3;
+}
+
+.question-answer > * {
+    pointer-events: none;
+}
+
+/* Customize the label (the multi-answer) */
+.multi-answer {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.multi-answer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: .55em;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    border: 3px solid #aaaaaa;
+    box-sizing: border-box;
+}
+
+.multi-answer .checkmark.checked {
+    border: 3px solid #67b34e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Style the checkmark/indicator */
+.multi-answer .checkmark::after {
+    left: 10px;
+    top: 3px;
+    width: 10px;
+    height: 20px;
+    border: solid #67b34e;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Show the checkmark when checked */
+.multi-answer .checkmark.checked::after {
+    display: block;
+}
+
+.submit-answer {
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1;
+    text-align: center;
+    border: 0;
+    padding: .75em 1.5em;
+    font-size: 1em;
+    background-color: #67b34e;
+    color: #fff;
+    user-select: none;
+}
+
+.submit-answer:hover {
+    background-color: #529545;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translate3d(40%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.question {
+    display: none;
+    animation: slide-in .4s ease;
+}
+
+.question:first-child {
+    display: block;
+}
+
+.results-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-size: 1.75em;
+    line-height: 1.75em;
+    animation: slide-in .4s ease;
+}
+
+.results-total {
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.results-container a {
+    position: relative;
+    padding: 15px 30px;
+    margin-top: 30px;
+    border: 3px solid #111;
+    background: none;
+    cursor: pointer;
+    font-size: .75em;
+    transition: background .2s;
+}
+
+.results-container a:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.results-container a:active {
+    background: rgba(255, 255, 255, .5);
+    top: -2px;
+}
+
+.question-answer.wrong, .question.wrong .multi-answers {
+    background: rgba(236, 100, 75, .5);
+    animation: shake 0.5s cubic-bezier(.35, .05, .20, .99) both;
+}
+
+.question-answer.wrong {
+    pointer-events: none;
+}
+
+.question-answer.right, .question.right .multi-answers {
+    background: rgba(135, 211, 124, .5);
+}
+
+.question.right, .question-answers.right {
+    pointer-events: none;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+    20%, 80% {
+        transform: translateX(1px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(-2px);
+    }
+    45%, 55% {
+        transform: translateX(2px);
+    }
+}
+
+.correct-modal {
+    font-size: 5em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: #FCEB9499;
+    will-change: transform;
+    transform: scale(4);
+    z-index: 2;
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    display: none;
+}
+
+.panel {
+    width: 100%;
+    background: rgb(252, 235, 148);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.correct-modal.modal-enter {
+    display: flex;
+    animation: modal-enter 2.3s ease-in both;
+}
+
+.praise, .points {
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+@keyframes modal-enter {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    99% {
+        opacity: .5;
+        transform: scale(1);
+    }
+    100% {
+        display: none;
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    .panel {
+        height: 200px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    header {
+        padding-top: 20px;
+    }
+
+    .questions {
+        width: 75%;
+    }
+
+    .question-answer:hover {
+        border-color: rgba(0, 0, 0, .5);
+    }
+
+    .question-answer:focus {
+        outline: gray solid 1px;
+    }
+
+    .submit-answer:focus {
+        outline: gray solid 2px;
+    }
+
+    .panel {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 16px;
+    }
+
+    .panel {
+        height: 400px;
+    }
+}
